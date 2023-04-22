@@ -85,6 +85,12 @@ form {
   }
   
 
+  @media (max-width: 767px) {
+    .select-tooltip {
+      display: none;
+    }
+  }
+  
   .card {
     background-color: #fff;
     border-radius: 10px;
@@ -97,3 +103,4 @@ form {
 #output {
   display: none;
 }
+
