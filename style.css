@@ -85,11 +85,12 @@ form {
   }
   
 
-  @media (max-width: 767px) {
+  @media (max-width: 750px) {
     .select-tooltip {
       display: none;
     }
   }
+  
   
   .card {
     background-color: #fff;
