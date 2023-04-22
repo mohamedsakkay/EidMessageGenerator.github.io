@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mebrok El Eid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Mebrok Eid Generator</h1>
+    <form id="greet-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="relation">Type of relation:</label>
+        <select id="relation" name="relation">
+            <option value="sahbi">Sahbi</option>
+            <option value="sahbti">Sahbti</option>
+            <option value="bestfriend-sahbi">sahbi+dedicace</option>
+            <option value="bestfriend-sahbti">sahbti+dedicace</option>
+            <option value="3amti">3amti+dedicace</option>
+            <option value="3ami">3ami+dedicace</option>
+            <option value="khalti">Khalti+dedicace</option>
+            <option value="khali">Khali+dedicace</option>
+        </select><br><br>
+
+        <label for="dedicace">Dedicace:</label>
+        <input type="text" id="dedicace" name="dedicace"><br><br>
+
+        <label for="langue">Language:</label>
+        <select id="langue" name="langue">
+            <option value="ar">Arabic</option>
+            <option value="fr" selected>French</option>
+        </select><br><br>
+        <span class="select-tooltip">Please note that the Arabic option does not apply to certain relationships such as 'sahbi' and 'sahbti'.</span>
+
+        <button  id="greetButton" type="submit">Generate</button>
+        
+    </form>
+
+    <div id="output"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
